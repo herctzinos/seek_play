@@ -1,0 +1,545 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 22-Nov-2018, 10:48:06
+    Author     : Herc
+*/
+/*borders everywhere*/
+
+.centreButtons {
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    top: 5%;
+    left: 50%
+}
+
+.container{max-width:1170px; margin:auto;
+
+}
+img{ max-width:100%;}
+.inbox_people {
+    background: #f8f8f8 none repeat scroll 0 0;
+    float: left;
+    overflow: hidden;
+    width: 40%; border-right:1px solid #c4c4c4;
+}
+
+
+.top_spac{ margin: 20px 0 0;}
+
+
+.recent_heading {float: left;}
+
+
+.headind_srch{ padding:10px 29px 10px 20px; overflow:hidden; border-bottom:1px solid #c4c4c4;}
+
+.recent_heading h4 {
+    color: #05728f;
+    font-size: 21px;
+    margin: auto;
+
+}
+
+
+.chat_ib h5{ font-size:15px; color:#464646; margin:0 0 8px 0;}
+.chat_ib h5 span{ font-size:13px; float:right;}
+.chat_ib p{ font-size:14px; color:#989898; margin:auto;}
+.chat_img {
+    float: left;
+    width: 11%;
+}
+.chat_ib {;
+          float: left;
+          padding: 0 0 0 15px;
+          width: 88%;
+}
+
+.chat_people{ overflow:hidden; clear:both; cursor: pointer;}
+.chat_list {
+    border-bottom: 1px solid #c4c4c4;
+    margin: 0;
+    padding: 18px 16px 10px;
+}
+.inbox_chat { height: 550px; overflow-y: scroll;}
+
+.active_chat{ background:#B1C1E9;
+
+}
+
+.incoming_msg_img {width: 6%;}
+.received_msg {   
+    padding: 0 0 0 10px;
+    vertical-align: top;
+}
+.received_withd_msg p {
+    background: #ebebeb none repeat scroll 0 0;
+    border-radius: 3px;
+    color: #646464;
+    font-size: 14px;
+    margin: 0;
+    padding: 5px 10px 5px 12px;
+    width: 200%;
+}
+.time_date {
+    color: #747474;
+    display: block;
+    font-size: 12px;
+    margin: 8px 0 0;
+}
+.received_withd_msg { width: 57%;}
+.mesgs {float: left;
+        padding: 30px 15px 0 25px;
+        width: 60%;
+}
+
+.sent_msg p {
+    background: #05728f none repeat scroll 0 0;
+    border-radius: 3px;
+    font-size: 14px;
+    margin: 0; color:#fff;
+    padding: 5px 10px 5px 12px;
+    width:100%;
+}
+.outgoing_msg{ overflow:hidden; margin:26px 0 26px;}
+.sent_msg {
+    float: right;
+    width: 46%;
+}
+.messaging { padding: 0 0 50px 0;}
+.msg_history {
+    height: 516px;
+    overflow-y: auto;
+}
+
+
+
+
+
+
+
+
+
+/*afairesi background kai afskisi carousel pros ta deksia*/
+/*alles pics sto register carousel*/
+
+/*kentriko menu: mikrotera buttons
+panw deksia to username mazi me epilogi gia ta stoixeia tou xristi kai dipla se mikro button to logout
+isws ena fonto monoxromo sta buttons
+ksexwristes photo ana submenu
+sta requests vazoume div me logo epanw
+
+
+
+*/
+@import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+.login-block{
+    background: #DE6262;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #FFB88C, #DE6262);  /* Chrome 10-25, Safari 5.1-6 */
+    /* background whole page*/
+    background: linear-gradient(to bottom, #79abfc, #022660); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    float:left;
+    width:100%;
+}
+/* eikona pisw apo carousel*/
+.banner-sec{  no-repeat left bottom; background-size:cover; min-height:500px; border-radius: 0 10px 10px 0; padding:0;}
+/* periexei kai forma kai carousel*/
+.container{background:#fff; border-radius: 10px; box-shadow:15px 20px 0px rgba(0,0,0,0.1);}
+/* eikona tou carousel*/
+.carousel-inner{border-radius:0 10px 10px 0;}
+.carousel-caption{text-align:left; left:5%;}
+/*epanw kommati */
+.login-sec{padding: 50px 30px; position:relative;}
+.login-sec .copy-text{position:absolute; width:80%; bottom:20px; font-size:13px; text-align:center;}
+.login-sec .copy-text i{color:#23F15B;}
+.login-sec .copy-text a{color:#23F15B;}
+/*keimeno epanw apo grammi */
+.login-sec h2{margin-bottom:30px; font-weight:800; font-size:30px; color: #022660;}
+/* orizontia grammi*/
+.login-sec h2:after{content:" "; width:100px; height:5px; background:#022660; display:block; margin-top:20px; border-radius:3px; margin-left:auto;margin-right:auto}
+/* button submit*/
+.btn-login{background: #23F15B; color:#fff; font-weight:600;}
+.banner-text{width:70%; position:absolute; bottom:40px; padding-left:20px;}
+.banner-text h2{color:#fff; font-weight:600;}
+.banner-text h2:after{content:" "; width:100px; height:5px; background:#FFF; display:block; margin-top:20px; border-radius:3px;}
+.banner-text p{color:#fff;}
+/********************************/
+/*       Fade Bs-carousel       */
+/********************************/
+/* fonto pisw apo eikona carousel */
+.fade-carousel {
+    position: relative;
+    height: 100vh;
+}
+.fade-carousel .carousel-inner .item {
+    height: 100vh;
+}
+/* buttons opou allazeis eikona */
+.fade-carousel .carousel-indicators > li {
+    margin: 0 2px;
+    background-color: #f39c12;
+    border-color: #f39c12;
+    opacity: .5;
+}
+.fade-carousel .carousel-indicators > li.active {
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+}
+/********************************/
+/*          Hero Headers        */
+/********************************/
+/* kentriko element eikonwn */
+.hero {
+    position: absolute;
+    top: 73%;
+    left: 50%;
+    z-index: 3;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+    -webkit-transform: translate3d(-50%,-50%,0);
+    -moz-transform: translate3d(-50%,-50%,0);
+    -ms-transform: translate3d(-50%,-50%,0);
+    -o-transform: translate3d(-50%,-50%,0);
+    transform: translate3d(-50%,-50%,0);
+}
+/* keimeno kentrikou element */
+.hero h1 {
+    font-size: 4em;    
+    font-weight: bold;
+    padding: 0;
+}
+.fade-carousel .carousel-inner .item .hero {
+    opacity: 0;
+    -webkit-transition: 2s all ease-in-out .1s;
+    -moz-transition: 2s all ease-in-out .1s; 
+    -ms-transition: 2s all ease-in-out .1s; 
+    -o-transition: 2s all ease-in-out .1s; 
+    transition: 2s all ease-in-out .1s; 
+}
+/* taxitita emfanisis keimenou */
+.fade-carousel .carousel-inner .item.active .hero {
+    opacity: 1;
+    -webkit-transition: 2s all ease-in-out .1s;
+    -moz-transition: 2s all ease-in-out .1s; 
+    -ms-transition: 2s all ease-in-out .1s; 
+    -o-transition: 2s all ease-in-out .1s; 
+    transition: 2s all ease-in-out .1s;    
+}
+/********************************/
+/*            Overlay           */
+/********************************/
+/* skiasi ekonwn */
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: black;
+    opacity: .1;
+}
+/********************************/
+/*          Custom Buttons      */
+/********************************/
+.btn.btn-lg {padding: 10px 40px;}
+.btn.btn-hero,
+.btn.btn-hero:hover,
+.btn.btn-hero:focus {
+    color: #f5f5f5;
+    background-color: #1abc9c;
+    border-color: #1abc9c;
+    outline: none;
+    margin: 20px auto;
+}
+/********************************/
+/*       Slides backgrounds     */
+/********************************/
+.fade-carousel .slides .slide-1, 
+.fade-carousel .slides .slide-2,
+.fade-carousel .slides .slide-3,
+.fade-carousel .slides .slide-4 {
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.fade-carousel .slides .slide-1 {
+    background-image: url(giannis.jpg); 
+}
+.fade-carousel .slides .slide-2 {
+    background-image: url(tennis.jpg);
+}
+.fade-carousel .slides .slide-3 {
+    background-image: url(soccer.jpg);
+}
+.fade-carousel .slides .slide-4 {
+    background-image: url(banner.jpg);
+}
+/********************************/
+/*          Media Queries       */
+/********************************/
+@media screen and (min-width: 980px){
+    .hero { width: 980px; }    
+}
+@media screen and (max-width: 640px){
+    .hero h1 { font-size: 4em; }    
+}
+
+
+/* USER PROFILE PAGE */
+/* geniki eikona pisw */
+.card {
+    margin-top: 0px;
+    padding: 150px;
+    background-color: rgba(214, 224, 226, 0.2);
+    -webkit-border-top-left-radius:5px;
+    -moz-border-top-left-radius:5px;
+    border-top-left-radius:5px;
+    -webkit-border-top-right-radius:5px;
+    -moz-border-top-right-radius:5px;
+    border-top-right-radius:5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+.card.hovercard {
+    position: relative;
+    padding-top: 0;
+    text-align: center;
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 1);
+}
+/* komati kartwlwn */
+.card.hovercard .card-background {
+    height: 200px;
+    width:110%;
+}
+.card-background img {
+
+
+}
+/* thesi eikonidio me pic user */
+.useravatar {
+    float:right;
+
+}
+.profpic {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+
+}
+body, html {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgb(104, 145, 162), rgb(12, 97, 33));
+}
+/**
+ * Profile image component
+ */
+.profile-header-container{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.profile-header-img {
+    padding: 54px;
+}
+
+.profile-header-img > img.img-circle {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #51D2B7;
+}
+
+.profile-header {
+    margin-top: 43px;
+}
+
+/**
+ * Ranking component
+ */
+.rank-label-container {
+    margin-top: -19px;
+    /* z-index: 1000; */
+    text-align: center;
+}
+
+.label.label-default.rank-label {
+    background-color: #006d2b;
+    padding: 10px 20px 10px 20px;
+    border-radius: 27px;
+}
+domi eikonidio me pic user 
+.card.hovercard .useravatar-img {
+    width: 200px;
+    height: 100px;
+    max-width: 100px;
+    max-height: 100px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+}
+
+.profpic {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+
+}
+/*
+ thesi gramis me username 
+.card.hovercard .card-info {
+    position: absolute;
+    bottom: 14px;
+    left: 0;
+    right: 0;
+}
+ domi grammis me username 
+.card.hovercard .card-info .card-title {
+    padding:0 5px;
+    font-size: 20px;
+    line-height: 1;
+    color: #262626;
+    background-color: rgba(255, 255, 255, 0.1);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.card.hovercard .card-info {
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 20px;
+    color: #737373;
+    text-overflow: ellipsis;
+}
+.card.hovercard .bottom {
+    padding: 0 20px;
+    margin-bottom: 17px;
+    
+}*/
+/* koumpia menu */
+.btn-pref .btn {
+    -webkit-border-radius:0 !important;
+    background-color: rgba(0,0,0, 0.1);;
+    border-color: #B1C1E9;
+    font-weight: bold;
+    color:white;
+    border: none;
+}
+.btn-pref .btn:hover{
+    background: #3a3a3a;
+    opacity: 0.6;
+}
+
+
+/*---------- star rating ----------*/
+.flex-display {
+    display: flex;
+}
+.star-rating {
+    display: flex;
+    align-items: center;
+    font-size: 2.7em;
+    justify-content: center;
+    margin-top: 50px;
+}
+.back-stars {
+    display: flex;
+    position: relative;
+    color:#727171;
+}
+.front-stars {
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    color: green;
+    top: 0;
+    -webkit-text-stroke: 1px green;
+
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+    background-color: #006d2b;
+}
+
+
+
+/*validator style*/
+
+
+.error-message {
+    color: #cc0033;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 15px;
+    margin: 5px 0 0;
+}
+
+/*scrollbar*/ 
+#style-5::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+#style-5::-webkit-scrollbar
+{
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+#style-5::-webkit-scrollbar-thumb
+{
+    background-color: #0ae;
+
+    background-image: -webkit-gradient(linear, 0 0, 0 100%,
+        color-stop(.5, rgba(255, 255, 255, .2)),
+        color-stop(.5, transparent), to(transparent));
+}
+
+
+
+.main-center{
+        position: static; 
+        text-align: center;
+        width:100%; 
+        margin:0 auto;
+ 	background-color: transparent;	   
+        text-shadow: 2px;
+	-webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+
+}
+.main-centers{
+ 	position: static; 
+        text-align: center;        
+	background-color: transparent;
+        text-shadow: 2px;
+	-webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+
+}
+.main{
+ 	margin:50px 15px;
+}
+.main-login{
+ 	background-color: transparent;
+    /* shadows and rounded borders */
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+
+}
